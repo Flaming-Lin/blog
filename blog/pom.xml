@@ -1,0 +1,162 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.flaming</groupId>
+  <artifactId>blog</artifactId>
+  <packaging>war</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>blog Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+
+  <!-- Configuration of the version information -->
+  <properties>
+    <junitVersion>3.8.1</junitVersion>
+    <springVersion>4.3.9.RELEASE</springVersion>
+    <commonsloggingVersion>1.2</commonsloggingVersion>
+    <hibernateVersion>5.0.11.Final</hibernateVersion>
+    <jstlVersion>1.2</jstlVersion>
+    <taglibVersion>1.1.2</taglibVersion>
+    <servletVersion>3.0-alpha-1</servletVersion>
+    <sqlserverVersion>4.0</sqlserverVersion>
+    <c3p0Version>0.9.1.2</c3p0Version>
+    <log4jVersion>1.2.17</log4jVersion>
+    <javassistVersion>3.18.1-GA</javassistVersion>
+    <fileuploadVersion>1.3.1</fileuploadVersion>
+    <fastjsonVersion>1.2.3</fastjsonVersion>
+  </properties>
+
+  <dependencies>
+    <!-- Unit debug -->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junitVersion}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- spring -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-orm</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>commons-logging</groupId>
+      <artifactId>commons-logging</artifactId>
+      <version>${commonsloggingVersion}</version>
+    </dependency>
+
+    <!-- spring mvc & spring web -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${springVersion}</version>
+    </dependency>
+
+    <!-- configuration of hibernate framework-->
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>${hibernateVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-ehcache</artifactId>
+      <version>${hibernateVersion}</version>
+    </dependency>
+
+    <!-- support for the jsp page -->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>${jstlVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>${taglibVersion}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>${servletVersion}</version>
+      <scope>provided</scope>
+    </dependency>
+
+    <!-- database SQL server -->
+    <dependency>
+      <groupId>com.microsoft.sqlserver</groupId>
+      <artifactId>sqljdbc4</artifactId>
+      <version>${sqlserverVersion}</version>
+    </dependency>
+
+    <!-- database connection pool -->
+    <dependency>
+      <groupId>c3p0</groupId>
+      <artifactId>c3p0</artifactId>
+      <version>${c3p0Version}</version>
+    </dependency>
+
+    <!-- configuration of log4j -->
+    <dependency>
+      <groupId>log4j</groupId>
+      <artifactId>log4j</artifactId>
+      <version>${log4jVersion}</version>
+    </dependency>
+
+    <!-- configuration of javassist -->
+    <dependency>
+      <groupId>org.javassist</groupId>
+      <artifactId>javassist</artifactId>
+      <version>${javassistVersion}</version>
+    </dependency>
+
+    <!-- file uplodd -->
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>${fileuploadVersion}</version>
+    </dependency>
+
+    <!-- json support -->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>fastjson</artifactId>
+      <version>${fastjsonVersion}</version>
+    </dependency>
+
+  </dependencies>
+
+  <build>
+    <finalName>blog</finalName>
+  </build>
+
+</project>

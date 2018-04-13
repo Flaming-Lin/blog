@@ -7,7 +7,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 import java.util.Comparator;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service("categoryService")
 @Transactional
@@ -34,6 +36,18 @@ public class CategoryServiceImpl implements CategoryService{
 
     public Category findOne(int id) {
         return categoryDao.findOne(id);
+    }
+
+    public Set<Category> getDistinctSet(String[] categoryArr){
+        Set<Category> categorySet = new HashSet<Category>();
+        for(String categoryStr : categoryArr){
+            Category categoryFind = this.findByContent(categoryStr);
+            if(null == categoryFind){
+                categoryFind = new Category(categoryStr);
+            }
+            categorySet.add(categoryFind);
+        }
+        return categorySet;
     }
 
     public List<Category> findAll(){

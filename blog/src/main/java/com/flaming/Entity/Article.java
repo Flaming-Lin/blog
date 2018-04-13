@@ -45,6 +45,20 @@ public class Article implements Serializable, Comparable<Article>{
     }
 
     /** Constructor with parameters **/
+    public Article(String title, String picUrl, Date publish, String mdContent, String introduction,
+                   int total_click, Set<Category> categories, int sortIndex, String block){
+        this.title = title;
+        this.picUrl = picUrl;
+        this.publish = publish;
+        this.mdContent = mdContent;
+        this.introduction = introduction;
+        this.total_click = total_click;
+        this.categories = categories;
+        this.sortIndex = sortIndex;
+        this.block = block;
+    }
+
+    /** Constructor with parameters **/
     public Article(String id, String title, String picUrl, Date publish, String mdContent, String introduction,
                    int total_click, Set<Category> categories, int sortIndex, String block){
         this.id = id;

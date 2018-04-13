@@ -26,6 +26,17 @@ public class Category implements Serializable{
     }
 
     /** Constructor with parameters **/
+    public Category(String content){
+        this.content = content;
+    }
+
+    /** Constructor with parameters **/
+    public Category(String content, Set<Article> articles){
+        this.content = content;
+        this.articles = articles;
+    }
+
+    /** Constructor with parameters **/
     public Category(String id, String content, Set<Article> articles){
         this.id = id;
         this.content = content;

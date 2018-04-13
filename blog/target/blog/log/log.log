@@ -1,0 +1,8 @@
+14:06:10.343 [http-apr-8080-exec-2] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:33)ooger - enter the requestMapping '/index'
+14:06:10.547 [http-apr-8080-exec-2] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:38)ooger - exit the requestMapping '/index'
+14:06:11.648 [http-apr-8080-exec-10] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:33)ooger - enter the requestMapping '/index'
+14:06:11.676 [http-apr-8080-exec-10] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:38)ooger - exit the requestMapping '/index'
+14:26:50.279 [http-apr-8080-exec-2] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:33)ooger - enter the requestMapping '/index'
+14:26:50.552 [http-apr-8080-exec-2] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:38)ooger - exit the requestMapping '/index'
+14:26:51.656 [http-apr-8080-exec-10] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:33)ooger - enter the requestMapping '/index'
+14:26:51.688 [http-apr-8080-exec-10] [index] DEBUG com.flaming.Controller.IndexController.index(IndexController.java:38)ooger - exit the requestMapping '/index'

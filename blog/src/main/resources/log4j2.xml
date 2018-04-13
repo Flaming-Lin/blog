@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Configuration status="WARN">
+    <properties>
+        <property name="LOG_HOME">${web:rootDir}/log/</property>
+        <property name="FILE_NAME">log</property>
+        <property name="root.level">error</property>
+        <property name="com.flaming.Controller.level">debug</property>
+    </properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%M] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <File name="FileAppender" fileName="${LOG_HOME}/${FILE_NAME}.log">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] [%M] %-5level %looger{36} - %msg%n" />
+        </File>
+    </Appenders>
+    
+    <Loggers>
+        <Root level="${root.level}">
+            <AppenderRef ref="Console" />
+        </Root>
+
+        <Logger name="com.flaming.Controller" level="${com.flaming.Controller.level}" additivity="false">
+            <AppenderRef ref="Console" />
+            <AppenderRef ref="FileAppender" />
+        </Logger>
+    </Loggers>
+</Configuration>
